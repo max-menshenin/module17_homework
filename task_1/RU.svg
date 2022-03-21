@@ -1,5 +1,7 @@
 <!-- Изобразить с помощью элементов SVG флаги пяти стран: Россия, Франция, Финляндия, Швейцария, Япония. -->
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
-  <rect width="300" height="100" style="fill:white;" />
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="180" fill="currentColor">
+<rect width="300" height="0" style="fill:white;" />
+<rect width="300" height="100" style="fill:blue;" />
+<rect width="300" height="10" style="fill:red;" />
 </svg>
