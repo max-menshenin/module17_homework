@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8901dd9-4a6a-4b9c-9744-662b1a6e290f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/task_2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_2/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/task_2/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,12 +48,25 @@
       <option name="presentableId" value="Default" />
       <updated>1650633262441</updated>
       <workItem from="1650633265621" duration="1139000" />
-      <workItem from="1650634568421" duration="6158000" />
+      <workItem from="1650634568421" duration="6244000" />
+      <workItem from="1650700436926" duration="4710000" />
+      <workItem from="1650731121958" duration="286000" />
+      <workItem from="1650731604349" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
