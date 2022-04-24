@@ -2,6 +2,8 @@
 // При клике на кнопку иконка должна меняться на icon_02. Повторный клик меняет иконку обратно.
 
 const btn = document.querySelector('.j-btn-test');
+// flag отвечает за смену отрисовки картинки
+
 let flag = true;
 
 btn.addEventListener('click', () => {
