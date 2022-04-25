@@ -8,12 +8,11 @@ let flag = true;
 
 btn.addEventListener('click', () => {
     if (flag == true) {
-        flag = !flag;
         btn.src = 'icon_01.svg';
     }
     else {
-        flag = !flag;
         btn.src = 'icon_02.svg';
+        flag = !flag;
     }
 });
 
