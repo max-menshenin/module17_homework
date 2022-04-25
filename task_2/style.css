@@ -34,18 +34,5 @@
     font-size: 15px;
 }
 
-.btn--magic .btn_icon {
-    animation-duration: 1s;
-    animation-name: magic;
-    animation-iteration-count: infinite;
-}
 
-@keyframes magic {
-    from {
-        transform: rotate(0);
-    }
 
-    to {
-        transform: rotate(360deg);
-    }
-}
