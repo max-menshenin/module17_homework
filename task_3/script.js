@@ -9,10 +9,11 @@ const status = document.getElementById('status');
 
 btn.addEventListener('click', () => {
   status.innerText = 'Width: ' + window.innerWidth +"\n"+ 'Height: '+ window.innerHeight;
-    if ("geolocation" in navigator) {
-        /* местоположение доступно */
-    } else {
-        /* местоположение недоступно */
-        alert('denied');
-    }
-});
+
+
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const { coords } = position;
+    });
+  } else alert('Информация о местоположении недоступна')})
+
