@@ -15,5 +15,5 @@ btn.addEventListener('click', () => {
     navigator.geolocation.getCurrentPosition((position) => {
       const { coords } = position;
     });
-  } else alert('Информация о местоположении недоступна')})
+  } else alert('Информация о местоположении недоступна')});
 
