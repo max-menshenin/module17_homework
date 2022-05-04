@@ -4,16 +4,18 @@
 Координаты местонахождения пользователя. Если пользователь отказался дать доступ к местоположению 
 или данная функция недоступна в бразуере, вывести вместо координат сообщение «Информация о местоположении недоступна».*/
 
-const btn = document.querySelector('.j-btn-test');
-const status = document.getElementById('status');
-
+const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {
-  status.innerText = 'Width: ' + window.innerWidth +"\n"+ 'Height: '+ window.innerHeight;
+  let screenHeight = window.screen.height;  var screenWidth = window.screen.availWidth;
+  alert(`Размер экрана ${screenHeight} х ${screenWidth}`);  });
 
 
-  if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition((position) => {
-      const { coords } = position;
-    });
-  } else alert('Информация о местоположении недоступна')});
+
+
+
+
+
+
+
+
 
