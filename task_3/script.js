@@ -5,17 +5,32 @@
 или данная функция недоступна в бразуере, вывести вместо координат сообщение «Информация о местоположении недоступна».*/
 
 const btn = document.querySelector('.btn');
+const screenP = document.querySelector('#screen');
+const coordsP = document.querySelector('#coords');
+
+function getScreenSize() {
+	screenP.innerText = `Ширина экрана:${window.screen.width}px Высота экрана:  ${window.screen.height}px`;
+}
+
+const error = () => {
+	status.textContent = 'Информация о местоположении недоступна';
+}
+
+const success = (position) => {
+	console.log('position', position);
+	const latitude = position.coords.latitude;
+	const longitude = position.coords.longitude;
+
+	coordsP.textContent = `Широта: ${latitude} °, Долгота: ${longitude} °`;
+}
 
 btn.addEventListener('click', () => {
-  let screenHeight = window.screen.height; var screenWidth = window.screen.availWidth;
-  if (navigator.geolocation) {
-    alert(`Размер экрана ${screenHeight} х ${screenWidth}`);
+	getScreenSize();
 
-  }
-  else {
-    alert('Информация о местоположении недоступна');
-  }
-}
-);
-
+	if (!navigator.geolocation) {
+		status.textContent = 'Определение геолокации не поддерживается браузером';
+	} else {
+		navigator.geolocation.getCurrentPosition(success, error);
+	}
+});
 
