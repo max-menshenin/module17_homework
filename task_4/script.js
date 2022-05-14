@@ -9,7 +9,7 @@ https://api.ipgeolocation.io/timezone?apiKey=32bcd4a6e4b548968e7afcdb682ac679&la
 */
 
 
-const btn = document.querySelector('.btn-test');
+const btn = document.querySelector('.btn');
 const status = document.querySelector('#status');
 const qcURL = document.querySelector('.URL');
 
